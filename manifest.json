@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "BeMate's url appender",
+  "description": "Adds utm_nooverride=1 as query string to the current url. Then copies it to the clipboard.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "url_appender.html"
+  },
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "https://ajax.googleapis.com/"
+  ]
+}
