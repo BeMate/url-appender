@@ -31,7 +31,7 @@ function copyToClipboard(text) {
 
 document.addEventListener('DOMContentLoaded', function() {
   getCurrentTabUrl(function(url) {
-    var newUrl = url+'utm_nooverride=1';
+    var newUrl = url.indexOf('?') === -1 ? url+'?utm_nooverride=1' : url+'&utm_nooverride=1';
 
     copyToClipboard(newUrl);
     renderStatus(newUrl);
